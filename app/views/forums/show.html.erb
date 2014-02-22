@@ -1,0 +1,16 @@
+<% title "Forum" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @forum.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @forum.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_forum_path(@forum) %> |
+  <%= link_to "Destroy", @forum, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", forums_path %>
+</p>
